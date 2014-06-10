@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% block metadesc %}{{ article.description|e }}{% endblock %}
 {% block head %}
 <meta name="keywords" content="{{ article.tags|join(', ')  }}">
 <meta itemprop="name" content="{{ article.title }}">
@@ -50,7 +51,7 @@
 {% endblock %}
 
 {% block footer %}
-<p><a href="{{ SITEURL }}/" class="button_accent">&larr; Back to Index</a></p>
+<!-- <p><a href="{{ SITEURL }}/" class="button_accent">&larr; Back to Index</a></p> -->
 <script language="javascript">
     function toggleComments() {
         var commentDiv = document.getElementById("article_comments");

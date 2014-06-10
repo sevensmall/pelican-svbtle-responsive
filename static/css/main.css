@@ -1,0 +1,53 @@
+body{
+    background: url("../images/main.png") repeat;
+}
+
+aside{
+    background: url("../images/slide.png") repeat;
+    color: #eeeeee;
+}
+
+.user_logo_url img{
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+a{
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+#user_meta a{
+    color: #eeeeee;
+}
+
+#user_meta a:hover{
+    border-color: #D95392;
+    color: #D95392;
+}
+
+#user_meta ul#social-links li{
+    display: inline-block;
+    /*width: 25%;*/
+}
+
+#user_meta ul#social-links li a{
+    border: none;
+}
+#user_meta ul#social-links li a:hover{
+    color: white;
+}
+
+.continue{
+    color: #D95392;
+}
+
+.continue:hover{
+    color: #31A4FD;
+}

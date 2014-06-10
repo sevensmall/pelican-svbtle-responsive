@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% block title %}{{ SITENAME }} — Blog{% endblock %}
+{% block title %}The {{ SITENAME }}{% endblock %}
 {% block content %}
 
 <section itemscope itemtype="http://schema.org/Blog">
@@ -11,6 +11,7 @@
   <div id="article_text" itemprop="text">
     {{ article.summary }}
   </div>
+  <a class="continue" href="{{ SITEURL }}/{{ article.url }}" title="{{ article.title }}">Continue reading <i class="fa fa-arrow-right"></i></a>
 </article>
 {% if not loop.last %}
 <hr />
